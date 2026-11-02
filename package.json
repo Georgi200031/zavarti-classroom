@@ -1,0 +1,17 @@
+{
+  "name": "zavarti-classroom",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bulgarian classroom wheel with server-verified teacher login",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "start": "node scripts/dev.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "deploy": "wrangler deploy",
+    "publish-secrets": "node scripts/publish-secrets.mjs"
+  },
+  "devDependencies": { "wrangler": "^4.0.0" }
+}
